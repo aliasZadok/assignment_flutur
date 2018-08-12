@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/slot_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/slot_image_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/einstein"/>
+
+        <ImageView
+            android:id="@+id/slot_image_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/einstein"/>
+
+        <ImageView
+            android:id="@+id/slot_image_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/einstein"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/slots_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/slots_overlay"
+        />
+    <Button
+        android:id="@+id/buttonPlayStop"
+        android:layout_below="@id/slots_overlay"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
+        android:text="PLAY"/>
+
+
+</RelativeLayout>
